@@ -1,12 +1,43 @@
-- 👋 Hi, I’m @slma27myloo
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+class Mahasiswa<T, U, V> {
+    private T nim;
+    private U name;
+    private V clas;
 
-<!---
-slma27myloo/slma27myloo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+    public T getNim() {
+        return nim;
+    }
+
+    public void setNim(T nim) {
+        this.nim = nim;
+    }
+
+    public U getName() {
+        return name;
+    }
+
+    public void setName(U name) {
+        this.name = name;
+    }
+
+    public V getClas() {
+        return clas;
+    }
+
+    public void setClas(V clas) {
+        this.clas = clas;
+    }
+}
+
+public class MahasiswaKu {
+    public static void main(String[] args) {
+        Mahasiswa<String, String, Integer> m = new Mahasiswa<>();
+        m.setNim("20220040239");
+        m.setName("Hisyam");
+        m.setClas(22);
+
+        System.out.println(m.getNim());
+        System.out.println(m.getName());
+        System.out.println(m.getClas());
+    }
+}
+
